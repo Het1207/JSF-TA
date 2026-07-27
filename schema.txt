@@ -1,0 +1,29 @@
+CREATE DATABASE MySQL_Practice;
+
+USE MySQL_Practice;
+
+CREATE TABLE Employee
+(
+    EmpID INT PRIMARY KEY,
+    EmpName VARCHAR(50),
+    Department VARCHAR(30),
+    City VARCHAR(30),
+    Salary DECIMAL(10,2),
+    Age INT,
+    Bonus DECIMAL(10,2)
+);
+
+
+INSERT INTO Employee
+(EmpID, EmpName, Department, City, Salary, Age, Bonus)
+VALUES
+(101,'Het Mehta','IT','Ahmedabad',55000,20,5000),
+(102,'Rahul Patel','HR','Surat',42000,25,3000),
+(103,'Priya Shah','Finance','Vadodara',67000,28,7000),
+(104,'Amit Joshi','IT','Rajkot',60000,30,4500),
+(105,'Neha Gupta','Marketing','Ahmedabad',48000,24,2500),
+(106,'Rohan Singh','HR','Surat',39000,27,3500),
+(107,'Anjali Desai','Finance','Ahmedabad',72000,31,8000),
+(108,'Karan Verma','IT','Vadodara',51000,23,4000),
+(109,'Sneha Sharma','Marketing','Rajkot',45000,26,2000),
+(110,'Vivek Kumar','IT','Ahmedabad',65000,29,6000);
